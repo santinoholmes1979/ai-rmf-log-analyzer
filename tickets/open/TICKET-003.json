@@ -1,0 +1,14 @@
+{
+  "ticket_id": "TICKET-003",
+  "status": "Open",
+  "owner": "Cyber Ops",
+  "created_date": "2026-02-08T13:13:55",
+  "due_date": "2026-02-22",
+  "severity": "High",
+  "weakness": "PRIV-001 - User added to Administrators group",
+  "nist_controls": "AC-2, AC-6, AU-6",
+  "risk_statement": "Unapproved elevation to administrative privileges can enable lateral movement and system compromise, violating least privilege expectations.",
+  "recommended_actions": "Confirm the group membership change is authorized and documented. | Identify the actor who made the change and the originating system. | Review recent activity for the newly-privileged account (logons, processes). | Verify least privilege and remove membership if not required.",
+  "evidence": [],
+  "comments": []
+}

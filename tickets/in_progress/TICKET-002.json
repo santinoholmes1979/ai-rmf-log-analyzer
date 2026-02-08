@@ -1,0 +1,15 @@
+{
+  "ticket_id": "TICKET-002",
+  "status": "in_progress",
+  "owner": "Cyber Ops",
+  "created_date": "2026-02-08T13:13:55",
+  "due_date": "2026-02-22",
+  "severity": "High",
+  "weakness": "ACCT-001 - New user account created",
+  "nist_controls": "AC-2, IA-2, AU-6",
+  "risk_statement": "Unauthorized account creation can enable persistence and unauthorized access, undermining account management controls and auditability.",
+  "recommended_actions": "Confirm account creation authorization (ticket/change record). | Review who initiated creation and from what host. | Check whether the account has been used for interactive logons. | Ensure account provisioning follows AC-2 approval workflow.",
+  "evidence": [],
+  "comments": [],
+  "last_updated": "2026-02-08T13:28:12"
+}

@@ -1,0 +1,29 @@
+{
+  "ticket_id": "TICKET-001",
+  "status": "in_progress",
+  "owner": "Cyber Ops",
+  "created_date": "2026-02-08T13:13:55",
+  "due_date": "2026-03-10",
+  "severity": "Medium",
+  "weakness": "AUTH-001 - Failed login burst (possible password guessing)",
+  "nist_controls": "AC-7, IA-2, AU-6",
+  "risk_statement": "Repeated authentication failures may indicate credential guessing, increasing the likelihood of unauthorized access if controls (e.g., lockout/MFA) are ineffective.",
+  "recommended_actions": "Validate whether the source IP is expected (VPN, admin subnet, known jump box). | Check for additional failed logins for the same user across other hosts. | If suspicious: reset credentials, review MFA status, and block IP if appropriate. | Confirm AC-7 lockout policy and alert thresholds are enforced.",
+  "evidence": [
+    {
+      "timestamp": "2026-02-08T13:17:52",
+      "evidence": "Evidence: data/processed/findings_enriched.json entry AUD-001 correlates with 1102 event"
+    }
+  ],
+  "comments": [
+    {
+      "timestamp": "2026-02-08T13:17:29",
+      "comment": "Reviewed finding; validating authorization with ISSO and checking related host telemetry."
+    },
+    {
+      "timestamp": "2026-02-08T13:18:16",
+      "comment": "CLOSURE JUSTIFICATION: Validated as authorized maintenance action; audit logs forwarded to central store. No further suspicious activity observed."
+    }
+  ],
+  "last_updated": "2026-02-08T13:18:59"
+}

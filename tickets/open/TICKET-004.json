@@ -1,0 +1,14 @@
+{
+  "ticket_id": "TICKET-004",
+  "status": "Open",
+  "owner": "Cyber Ops",
+  "created_date": "2026-02-08T13:13:55",
+  "due_date": "2026-02-15",
+  "severity": "Critical",
+  "weakness": "AUD-001 - Audit log cleared",
+  "nist_controls": "AU-9, AU-6, IR-4",
+  "risk_statement": "Clearing audit logs reduces visibility and may indicate anti-forensic activity, impairing detection, response, and accountability.",
+  "recommended_actions": "Treat as potential incident: preserve evidence and notify incident response. | Determine which account cleared logs and why; validate authorization. | Check for gaps in audit coverage and whether forwarding/central logging exists. | Verify AU-9 protections (access controls, forwarding, write-once storage).",
+  "evidence": [],
+  "comments": []
+}
