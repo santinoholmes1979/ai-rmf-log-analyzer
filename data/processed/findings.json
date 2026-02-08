@@ -1,0 +1,119 @@
+[
+  {
+    "rule_id": "AUTH-001",
+    "severity": "Medium",
+    "title": "Failed login burst (possible password guessing)",
+    "evidence": {
+      "user": "jsmith",
+      "ip": "203.0.113.10",
+      "count": 3,
+      "window_minutes": 5
+    },
+    "nist_800_53_controls": [
+      "AC-7",
+      "IA-2",
+      "AU-6"
+    ],
+    "rmf_note": "Supports monitoring of authentication anomalies and audit review."
+  },
+  {
+    "rule_id": "ACCT-001",
+    "severity": "High",
+    "title": "New user account created",
+    "evidence": {
+      "event": {
+        "source": "synthetic",
+        "host": "RYAN-LAB",
+        "timestamp": "2026-02-05T15:01:22Z",
+        "event_id": 4720,
+        "level": "Warning",
+        "provider": "",
+        "user": "ADMIN",
+        "ip": "",
+        "message": "A user account was created. Target Account Name: temp_admin",
+        "tags": "['account', 'user_created']"
+      }
+    },
+    "nist_800_53_controls": [
+      "AC-2",
+      "IA-2",
+      "AU-6"
+    ],
+    "rmf_note": "Account creation must be authorized and auditable."
+  },
+  {
+    "rule_id": "PRIV-001",
+    "severity": "High",
+    "title": "User added to Administrators group",
+    "evidence": {
+      "event": {
+        "source": "synthetic",
+        "host": "RYAN-LAB",
+        "timestamp": "2026-02-05T15:03:02Z",
+        "event_id": 4732,
+        "level": "Warning",
+        "provider": "",
+        "user": "ADMIN",
+        "ip": "",
+        "message": "A member was added to a security-enabled local group. Group: Administrators Member: temp_admin",
+        "tags": "['privilege', 'group_membership']"
+      }
+    },
+    "nist_800_53_controls": [
+      "AC-2",
+      "AC-6",
+      "AU-6"
+    ],
+    "rmf_note": "Privilege escalation should follow least privilege principles."
+  },
+  {
+    "rule_id": "AUD-001",
+    "severity": "Critical",
+    "title": "Audit log cleared",
+    "evidence": {
+      "event": {
+        "source": "synthetic",
+        "host": "RYAN-LAB",
+        "timestamp": "2026-02-05T16:20:44Z",
+        "event_id": 1102,
+        "level": "Error",
+        "provider": "",
+        "user": "temp_admin",
+        "ip": "",
+        "message": "The audit log was cleared.",
+        "tags": "['logging', 'log_cleared']"
+      }
+    },
+    "nist_800_53_controls": [
+      "AU-9",
+      "AU-6",
+      "IR-4"
+    ],
+    "rmf_note": "Audit integrity loss may indicate anti-forensics activity."
+  },
+  {
+    "rule_id": "PROC-001",
+    "severity": "High",
+    "title": "Encoded PowerShell execution detected",
+    "evidence": {
+      "event": {
+        "source": "synthetic",
+        "host": "RYAN-LAB",
+        "timestamp": "2026-02-05T16:23:18Z",
+        "event_id": 4688,
+        "level": "Warning",
+        "provider": "",
+        "user": "temp_admin",
+        "ip": "",
+        "message": "A new process has been created: powershell.exe -enc SQBFAFgAIAAoACcA...",
+        "tags": "['process', 'encoded_command']"
+      }
+    },
+    "nist_800_53_controls": [
+      "SI-4",
+      "AU-6",
+      "IR-4"
+    ],
+    "rmf_note": "Obfuscated command execution may indicate malicious activity."
+  }
+]

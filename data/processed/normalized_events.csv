@@ -1,0 +1,55 @@
+source,host,timestamp,event_id,level,provider,user,ip,message,tags
+synthetic,RYAN-LAB,2026-02-05T14:12:11Z,4625,Information,,jsmith,203.0.113.10,An account failed to log on. Status: 0xC000006D SubStatus: 0xC000006A,"['auth', 'failed_login']"
+synthetic,RYAN-LAB,2026-02-05T14:12:25Z,4625,Information,,jsmith,203.0.113.10,An account failed to log on. Status: 0xC000006D SubStatus: 0xC000006A,"['auth', 'failed_login']"
+synthetic,RYAN-LAB,2026-02-05T14:12:40Z,4625,Information,,jsmith,203.0.113.10,An account failed to log on. Status: 0xC000006D SubStatus: 0xC000006A,"['auth', 'failed_login']"
+synthetic,RYAN-LAB,2026-02-05T14:13:05Z,4624,Information,,jsmith,203.0.113.10,An account was successfully logged on.,"['auth', 'success_login']"
+synthetic,RYAN-LAB,2026-02-05T15:01:22Z,4720,Warning,,ADMIN,,A user account was created. Target Account Name: temp_admin,"['account', 'user_created']"
+synthetic,RYAN-LAB,2026-02-05T15:03:02Z,4732,Warning,,ADMIN,,A member was added to a security-enabled local group. Group: Administrators Member: temp_admin,"['privilege', 'group_membership']"
+synthetic,RYAN-LAB,2026-02-05T16:20:44Z,1102,Error,,temp_admin,,The audit log was cleared.,"['logging', 'log_cleared']"
+synthetic,RYAN-LAB,2026-02-05T16:23:18Z,4688,Warning,,temp_admin,,A new process has been created: powershell.exe -enc SQBFAFgAIAAoACcA...,"['process', 'encoded_command']"
+real,RyanHDevice1,/Date(1770515933766)/,2,Information,Microsoft-Windows-IsolatedUserMode,,,Secure Trustlet Id 6 and Pid 21108 stopped with status STATUS_SUCCESS.,
+real,RyanHDevice1,/Date(1770515454613)/,1,Information,Microsoft-Windows-IsolatedUserMode,,,Secure Trustlet \??\C:\WINDOWS\System32\NgcIso.exe Id 6 and Pid 21108 started with status STATUS_SUCCESS.,
+real,RyanHDevice1,/Date(1770515454612)/,5,Information,Microsoft-Windows-IsolatedUserMode,,,Secure Trustlet NULL Id 0 and Pid 0 started with status STATUS_SUCCESS.,
+real,RyanHDevice1,/Date(1770514543918)/,105,Information,Microsoft-Windows-Kernel-Power,,,Power source change.,
+real,RyanHDevice1,/Date(1770511270425)/,2,Information,Microsoft-Windows-IsolatedUserMode,,,Secure Trustlet Id 6 and Pid 16688 stopped with status STATUS_SUCCESS.,
+real,RyanHDevice1,/Date(1770510791059)/,1,Information,Microsoft-Windows-IsolatedUserMode,,,Secure Trustlet \??\C:\WINDOWS\System32\NgcIso.exe Id 6 and Pid 16688 started with status STATUS_SUCCESS.,
+real,RyanHDevice1,/Date(1770510791058)/,5,Information,Microsoft-Windows-IsolatedUserMode,,,Secure Trustlet NULL Id 0 and Pid 0 started with status STATUS_SUCCESS.,
+real,RyanHDevice1,/Date(1770506213993)/,16,Information,Microsoft-Windows-Kernel-General,,,The access history in hive \??\C:\Users\Ryan Holmes\AppData\Local\Packages\Microsoft.Windows.Photos_8wekyb3d8bbwe\Settings\settings.dat was cleared updating 1 keys and creating 1 modified pages.,
+real,RyanHDevice1,/Date(1770506212910)/,16,Information,Microsoft-Windows-Kernel-General,,,The access history in hive \??\C:\Users\Ryan Holmes\AppData\Local\Packages\Clipchamp.Clipchamp_yxz26nhyzhsrt\SystemAppData\Helium\UserClasses.dat was cleared updating 1 keys and creating 1 modified pages.,
+real,RyanHDevice1,/Date(1770506212894)/,16,Information,Microsoft-Windows-Kernel-General,,,The access history in hive \??\C:\Users\Ryan Holmes\AppData\Local\Packages\Clipchamp.Clipchamp_yxz26nhyzhsrt\SystemAppData\Helium\User.dat was cleared updating 1 keys and creating 1 modified pages.,
+real,RyanHDevice1,/Date(1770506170124)/,16,Information,Microsoft-Windows-Kernel-General,,,The access history in hive \??\C:\Users\Ryan Holmes\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\Settings\settings.dat was cleared updating 2 keys and creating 1 modified pages.,
+real,RyanHDevice1,/Date(1770506169718)/,16,Information,Microsoft-Windows-Kernel-General,,,The access history in hive \??\C:\ProgramData\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\S-1-5-21-2886018539-3815662427-1404205157-1001\SystemAppData\Helium\Cache\f5ea2982365ad924_COM15.dat was cleared updating 1 keys and creating 1 modified pages.,
+real,RyanHDevice1,/Date(1770506169712)/,16,Information,Microsoft-Windows-Kernel-General,,,The access history in hive \??\C:\Users\Ryan Holmes\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\SystemAppData\Helium\UserClasses.dat was cleared updating 3 keys and creating 1 modified pages.,
+real,RyanHDevice1,/Date(1770506169704)/,16,Information,Microsoft-Windows-Kernel-General,,,The access history in hive \??\C:\Users\Ryan Holmes\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\SystemAppData\Helium\User.dat was cleared updating 9 keys and creating 1 modified pages.,
+real,RyanHDevice1,/Date(1770505080831)/,7040,Information,Service Control Manager,,,The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.,
+real,RyanHDevice1,/Date(1770505005847)/,2,Information,Microsoft-Windows-IsolatedUserMode,,,Secure Trustlet Id 6 and Pid 8072 stopped with status STATUS_SUCCESS.,
+real,RyanHDevice1,/Date(1770504944422)/,7040,Information,Service Control Manager,,,The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.,
+real,RyanHDevice1,/Date(1770504694892)/,10016,Warning,Microsoft-Windows-DistributedCOM,,,"The application-specific permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{2593F8B9-4EAF-457C-B68A-50F6B8EA6B54}
+ and APPID 
+{15C20B67-12E7-4BB6-92BB-7AFF07997402}
+ to the user RyanHDevice1\Ryan Holmes SID (S-1-5-21-2886018539-3815662427-1404205157-1001) from address LocalHost (Using LRPC) running in the application container Unavailable SID (Unavailable). This security permission can be modified using the Component Services administrative tool.",
+real,RyanHDevice1,/Date(1770504691726)/,6062,Warning,Netwtw14,,,,
+real,RyanHDevice1,/Date(1770504689217)/,7021,Information,Netwtw14,,,,
+real,RyanHDevice1,/Date(1770504575143)/,1,Information,Microsoft-Windows-IsolatedUserMode,,,Secure Trustlet \??\C:\WINDOWS\System32\NgcIso.exe Id 6 and Pid 8072 started with status STATUS_SUCCESS.,
+real,RyanHDevice1,/Date(1770504575142)/,5,Information,Microsoft-Windows-IsolatedUserMode,,,Secure Trustlet NULL Id 0 and Pid 0 started with status STATUS_SUCCESS.,
+real,RyanHDevice1,/Date(1770504553810)/,566,Information,Microsoft-Windows-Kernel-Power,,,"The system session has transitioned from 11 to 12.
+
+Reason PolicyChange 
+
+BootId: 38",
+real,RyanHDevice1,/Date(1770504553810)/,507,Information,Microsoft-Windows-Kernel-Power,,,"The system is exiting Modern Standby 
+
+Reason: Lid.",
+real,RyanHDevice1,/Date(1770504553477)/,172,Information,Microsoft-Windows-Kernel-Power,,,"Connectivity state in standby: Connected, Reason: None",
+real,RyanHDevice1,/Date(1770504553418)/,701,Warning,Win32k,,,Power Manager has not requested suppression of all input (INPUT_SUPPRESS_REQUEST=0),
+real,RyanHDevice1,/Date(1770504553418)/,701,Warning,Win32k,,,Power Manager has not requested suppression of all input (INPUT_SUPPRESS_REQUEST=0),
+real,RyanHDevice1,/Date(1770504541565)/,172,Information,Microsoft-Windows-Kernel-Power,,,"Connectivity state in standby: Disconnected, Reason: Adaptive Connected Standby",
+real,RyanHDevice1,/Date(1770504535190)/,566,Information,Microsoft-Windows-Kernel-Power,,,"The system session has transitioned from 10 to 11.
+
+Reason InputMouse 
+
+BootId: 38",
+real,RyanHDevice1,/Date(1770504530158)/,506,Information,Microsoft-Windows-Kernel-Power,,,"The system is entering Modern Standby 
+
+Reason: AC/DC Display Burst Suppressed.",

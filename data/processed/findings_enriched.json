@@ -1,0 +1,159 @@
+[
+  {
+    "rule_id": "AUTH-001",
+    "severity": "Medium",
+    "title": "Failed login burst (possible password guessing)",
+    "evidence": {
+      "user": "jsmith",
+      "ip": "203.0.113.10",
+      "count": 3,
+      "window_minutes": 5
+    },
+    "nist_800_53_controls": [
+      "AC-7",
+      "IA-2",
+      "AU-6"
+    ],
+    "rmf_note": "Supports monitoring of authentication anomalies and audit review.",
+    "ai_summary": "**Failed login burst (possible password guessing)**\n\n- **Rule:** AUTH-001\n- **Severity:** Medium \u2014 Suspicious behavior; investigate to confirm legitimacy and tune controls.\n- **NIST 800-53 Controls:** AC-7, IA-2, AU-6\n",
+    "risk_statement": "Repeated authentication failures may indicate credential guessing, increasing the likelihood of unauthorized access if controls (e.g., lockout/MFA) are ineffective.",
+    "recommended_actions": [
+      "Validate whether the source IP is expected (VPN, admin subnet, known jump box).",
+      "Check for additional failed logins for the same user across other hosts.",
+      "If suspicious: reset credentials, review MFA status, and block IP if appropriate.",
+      "Confirm AC-7 lockout policy and alert thresholds are enforced."
+    ]
+  },
+  {
+    "rule_id": "ACCT-001",
+    "severity": "High",
+    "title": "New user account created",
+    "evidence": {
+      "event": {
+        "source": "synthetic",
+        "host": "RYAN-LAB",
+        "timestamp": "2026-02-05T15:01:22Z",
+        "event_id": 4720,
+        "level": "Warning",
+        "provider": "",
+        "user": "ADMIN",
+        "ip": "",
+        "message": "A user account was created. Target Account Name: temp_admin",
+        "tags": "['account', 'user_created']"
+      }
+    },
+    "nist_800_53_controls": [
+      "AC-2",
+      "IA-2",
+      "AU-6"
+    ],
+    "rmf_note": "Account creation must be authorized and auditable.",
+    "ai_summary": "**New user account created**\n\n- **Rule:** ACCT-001\n- **Severity:** High \u2014 Likely security impact; requires timely investigation and remediation.\n- **NIST 800-53 Controls:** AC-2, IA-2, AU-6\n",
+    "risk_statement": "Unauthorized account creation can enable persistence and unauthorized access, undermining account management controls and auditability.",
+    "recommended_actions": [
+      "Confirm account creation authorization (ticket/change record).",
+      "Review who initiated creation and from what host.",
+      "Check whether the account has been used for interactive logons.",
+      "Ensure account provisioning follows AC-2 approval workflow."
+    ]
+  },
+  {
+    "rule_id": "PRIV-001",
+    "severity": "High",
+    "title": "User added to Administrators group",
+    "evidence": {
+      "event": {
+        "source": "synthetic",
+        "host": "RYAN-LAB",
+        "timestamp": "2026-02-05T15:03:02Z",
+        "event_id": 4732,
+        "level": "Warning",
+        "provider": "",
+        "user": "ADMIN",
+        "ip": "",
+        "message": "A member was added to a security-enabled local group. Group: Administrators Member: temp_admin",
+        "tags": "['privilege', 'group_membership']"
+      }
+    },
+    "nist_800_53_controls": [
+      "AC-2",
+      "AC-6",
+      "AU-6"
+    ],
+    "rmf_note": "Privilege escalation should follow least privilege principles.",
+    "ai_summary": "**User added to Administrators group**\n\n- **Rule:** PRIV-001\n- **Severity:** High \u2014 Likely security impact; requires timely investigation and remediation.\n- **NIST 800-53 Controls:** AC-2, AC-6, AU-6\n",
+    "risk_statement": "Unapproved elevation to administrative privileges can enable lateral movement and system compromise, violating least privilege expectations.",
+    "recommended_actions": [
+      "Confirm the group membership change is authorized and documented.",
+      "Identify the actor who made the change and the originating system.",
+      "Review recent activity for the newly-privileged account (logons, processes).",
+      "Verify least privilege and remove membership if not required."
+    ]
+  },
+  {
+    "rule_id": "AUD-001",
+    "severity": "Critical",
+    "title": "Audit log cleared",
+    "evidence": {
+      "event": {
+        "source": "synthetic",
+        "host": "RYAN-LAB",
+        "timestamp": "2026-02-05T16:20:44Z",
+        "event_id": 1102,
+        "level": "Error",
+        "provider": "",
+        "user": "temp_admin",
+        "ip": "",
+        "message": "The audit log was cleared.",
+        "tags": "['logging', 'log_cleared']"
+      }
+    },
+    "nist_800_53_controls": [
+      "AU-9",
+      "AU-6",
+      "IR-4"
+    ],
+    "rmf_note": "Audit integrity loss may indicate anti-forensics activity.",
+    "ai_summary": "**Audit log cleared**\n\n- **Rule:** AUD-001\n- **Severity:** Critical \u2014 Immediate response required; potential compromise or loss of audit integrity.\n- **NIST 800-53 Controls:** AU-9, AU-6, IR-4\n",
+    "risk_statement": "Clearing audit logs reduces visibility and may indicate anti-forensic activity, impairing detection, response, and accountability.",
+    "recommended_actions": [
+      "Treat as potential incident: preserve evidence and notify incident response.",
+      "Determine which account cleared logs and why; validate authorization.",
+      "Check for gaps in audit coverage and whether forwarding/central logging exists.",
+      "Verify AU-9 protections (access controls, forwarding, write-once storage)."
+    ]
+  },
+  {
+    "rule_id": "PROC-001",
+    "severity": "High",
+    "title": "Encoded PowerShell execution detected",
+    "evidence": {
+      "event": {
+        "source": "synthetic",
+        "host": "RYAN-LAB",
+        "timestamp": "2026-02-05T16:23:18Z",
+        "event_id": 4688,
+        "level": "Warning",
+        "provider": "",
+        "user": "temp_admin",
+        "ip": "",
+        "message": "A new process has been created: powershell.exe -enc SQBFAFgAIAAoACcA...",
+        "tags": "['process', 'encoded_command']"
+      }
+    },
+    "nist_800_53_controls": [
+      "SI-4",
+      "AU-6",
+      "IR-4"
+    ],
+    "rmf_note": "Obfuscated command execution may indicate malicious activity.",
+    "ai_summary": "**Encoded PowerShell execution detected**\n\n- **Rule:** PROC-001\n- **Severity:** High \u2014 Likely security impact; requires timely investigation and remediation.\n- **NIST 800-53 Controls:** SI-4, AU-6, IR-4\n",
+    "risk_statement": "Obfuscated PowerShell execution may indicate malicious command execution and can facilitate defense evasion, persistence, or payload delivery.",
+    "recommended_actions": [
+      "Decode and review the PowerShell command if possible; look for persistence or payload download.",
+      "Correlate process creation with network connections and file writes.",
+      "Verify whether script execution policy controls are enforced.",
+      "If suspicious: isolate host and initiate incident handling procedures."
+    ]
+  }
+]

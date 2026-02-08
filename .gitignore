@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS/editor
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Optional: ignore generated outputs if you prefer ultra-clean repos
+# (For portfolio, I recommend committing ai_summary.md so recruiters can open it instantly)
+# data/processed/

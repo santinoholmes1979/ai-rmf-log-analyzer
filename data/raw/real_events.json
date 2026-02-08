@@ -1,0 +1,242 @@
+﻿[
+    {
+        "TimeCreated":  "\/Date(1770515933766)\/",
+        "Id":  2,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-IsolatedUserMode",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Secure Trustlet Id 6 and Pid 21108 stopped with status STATUS_SUCCESS."
+    },
+    {
+        "TimeCreated":  "\/Date(1770515454613)\/",
+        "Id":  1,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-IsolatedUserMode",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Secure Trustlet \\??\\C:\\WINDOWS\\System32\\NgcIso.exe Id 6 and Pid 21108 started with status STATUS_SUCCESS."
+    },
+    {
+        "TimeCreated":  "\/Date(1770515454612)\/",
+        "Id":  5,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-IsolatedUserMode",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Secure Trustlet NULL Id 0 and Pid 0 started with status STATUS_SUCCESS."
+    },
+    {
+        "TimeCreated":  "\/Date(1770514543918)\/",
+        "Id":  105,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Power source change."
+    },
+    {
+        "TimeCreated":  "\/Date(1770511270425)\/",
+        "Id":  2,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-IsolatedUserMode",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Secure Trustlet Id 6 and Pid 16688 stopped with status STATUS_SUCCESS."
+    },
+    {
+        "TimeCreated":  "\/Date(1770510791059)\/",
+        "Id":  1,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-IsolatedUserMode",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Secure Trustlet \\??\\C:\\WINDOWS\\System32\\NgcIso.exe Id 6 and Pid 16688 started with status STATUS_SUCCESS."
+    },
+    {
+        "TimeCreated":  "\/Date(1770510791058)\/",
+        "Id":  5,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-IsolatedUserMode",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Secure Trustlet NULL Id 0 and Pid 0 started with status STATUS_SUCCESS."
+    },
+    {
+        "TimeCreated":  "\/Date(1770506213993)\/",
+        "Id":  16,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-General",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The access history in hive \\??\\C:\\Users\\Ryan Holmes\\AppData\\Local\\Packages\\Microsoft.Windows.Photos_8wekyb3d8bbwe\\Settings\\settings.dat was cleared updating 1 keys and creating 1 modified pages."
+    },
+    {
+        "TimeCreated":  "\/Date(1770506212910)\/",
+        "Id":  16,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-General",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The access history in hive \\??\\C:\\Users\\Ryan Holmes\\AppData\\Local\\Packages\\Clipchamp.Clipchamp_yxz26nhyzhsrt\\SystemAppData\\Helium\\UserClasses.dat was cleared updating 1 keys and creating 1 modified pages."
+    },
+    {
+        "TimeCreated":  "\/Date(1770506212894)\/",
+        "Id":  16,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-General",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The access history in hive \\??\\C:\\Users\\Ryan Holmes\\AppData\\Local\\Packages\\Clipchamp.Clipchamp_yxz26nhyzhsrt\\SystemAppData\\Helium\\User.dat was cleared updating 1 keys and creating 1 modified pages."
+    },
+    {
+        "TimeCreated":  "\/Date(1770506170124)\/",
+        "Id":  16,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-General",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The access history in hive \\??\\C:\\Users\\Ryan Holmes\\AppData\\Local\\Packages\\Microsoft.ScreenSketch_8wekyb3d8bbwe\\Settings\\settings.dat was cleared updating 2 keys and creating 1 modified pages."
+    },
+    {
+        "TimeCreated":  "\/Date(1770506169718)\/",
+        "Id":  16,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-General",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The access history in hive \\??\\C:\\ProgramData\\Packages\\Microsoft.ScreenSketch_8wekyb3d8bbwe\\S-1-5-21-2886018539-3815662427-1404205157-1001\\SystemAppData\\Helium\\Cache\\f5ea2982365ad924_COM15.dat was cleared updating 1 keys and creating 1 modified pages."
+    },
+    {
+        "TimeCreated":  "\/Date(1770506169712)\/",
+        "Id":  16,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-General",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The access history in hive \\??\\C:\\Users\\Ryan Holmes\\AppData\\Local\\Packages\\Microsoft.ScreenSketch_8wekyb3d8bbwe\\SystemAppData\\Helium\\UserClasses.dat was cleared updating 3 keys and creating 1 modified pages."
+    },
+    {
+        "TimeCreated":  "\/Date(1770506169704)\/",
+        "Id":  16,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-General",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The access history in hive \\??\\C:\\Users\\Ryan Holmes\\AppData\\Local\\Packages\\Microsoft.ScreenSketch_8wekyb3d8bbwe\\SystemAppData\\Helium\\User.dat was cleared updating 9 keys and creating 1 modified pages."
+    },
+    {
+        "TimeCreated":  "\/Date(1770505080831)\/",
+        "Id":  7040,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Service Control Manager",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start."
+    },
+    {
+        "TimeCreated":  "\/Date(1770505005847)\/",
+        "Id":  2,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-IsolatedUserMode",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Secure Trustlet Id 6 and Pid 8072 stopped with status STATUS_SUCCESS."
+    },
+    {
+        "TimeCreated":  "\/Date(1770504944422)\/",
+        "Id":  7040,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Service Control Manager",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start."
+    },
+    {
+        "TimeCreated":  "\/Date(1770504694892)\/",
+        "Id":  10016,
+        "LevelDisplayName":  "Warning",
+        "ProviderName":  "Microsoft-Windows-DistributedCOM",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The application-specific permission settings do not grant Local Activation permission for the COM Server application with CLSID \r\n{2593F8B9-4EAF-457C-B68A-50F6B8EA6B54}\r\n and APPID \r\n{15C20B67-12E7-4BB6-92BB-7AFF07997402}\r\n to the user RyanHDevice1\\Ryan Holmes SID (S-1-5-21-2886018539-3815662427-1404205157-1001) from address LocalHost (Using LRPC) running in the application container Unavailable SID (Unavailable). This security permission can be modified using the Component Services administrative tool."
+    },
+    {
+        "TimeCreated":  "\/Date(1770504691726)\/",
+        "Id":  6062,
+        "LevelDisplayName":  "Warning",
+        "ProviderName":  "Netwtw14",
+        "MachineName":  "RyanHDevice1",
+        "Message":  null
+    },
+    {
+        "TimeCreated":  "\/Date(1770504689217)\/",
+        "Id":  7021,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Netwtw14",
+        "MachineName":  "RyanHDevice1",
+        "Message":  null
+    },
+    {
+        "TimeCreated":  "\/Date(1770504575143)\/",
+        "Id":  1,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-IsolatedUserMode",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Secure Trustlet \\??\\C:\\WINDOWS\\System32\\NgcIso.exe Id 6 and Pid 8072 started with status STATUS_SUCCESS."
+    },
+    {
+        "TimeCreated":  "\/Date(1770504575142)\/",
+        "Id":  5,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-IsolatedUserMode",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Secure Trustlet NULL Id 0 and Pid 0 started with status STATUS_SUCCESS."
+    },
+    {
+        "TimeCreated":  "\/Date(1770504553810)\/",
+        "Id":  566,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The system session has transitioned from 11 to 12.\r\n\r\nReason PolicyChange \r\n\r\nBootId: 38"
+    },
+    {
+        "TimeCreated":  "\/Date(1770504553810)\/",
+        "Id":  507,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Lid."
+    },
+    {
+        "TimeCreated":  "\/Date(1770504553477)\/",
+        "Id":  172,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Connectivity state in standby: Connected, Reason: None"
+    },
+    {
+        "TimeCreated":  "\/Date(1770504553418)\/",
+        "Id":  701,
+        "LevelDisplayName":  "Warning",
+        "ProviderName":  "Win32k",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Power Manager has not requested suppression of all input (INPUT_SUPPRESS_REQUEST=0)"
+    },
+    {
+        "TimeCreated":  "\/Date(1770504553418)\/",
+        "Id":  701,
+        "LevelDisplayName":  "Warning",
+        "ProviderName":  "Win32k",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Power Manager has not requested suppression of all input (INPUT_SUPPRESS_REQUEST=0)"
+    },
+    {
+        "TimeCreated":  "\/Date(1770504541565)\/",
+        "Id":  172,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "Connectivity state in standby: Disconnected, Reason: Adaptive Connected Standby"
+    },
+    {
+        "TimeCreated":  "\/Date(1770504535190)\/",
+        "Id":  566,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The system session has transitioned from 10 to 11.\r\n\r\nReason InputMouse \r\n\r\nBootId: 38"
+    },
+    {
+        "TimeCreated":  "\/Date(1770504530158)\/",
+        "Id":  506,
+        "LevelDisplayName":  "Information",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "MachineName":  "RyanHDevice1",
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: AC/DC Display Burst Suppressed."
+    }
+]
